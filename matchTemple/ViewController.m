@@ -85,11 +85,22 @@
                
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [weak.activityIndicator stopAnimating ];//停止
-                    self.baseImageView.image = result;
+                    weak.baseImageView.image = result;
                     if (!result) {
                         UIAlertView *alert  = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"拼接图片失败" delegate:nil
                                                                cancelButtonTitle:@"确定"  otherButtonTitles:nil, nil];
                         [alert show];
+                    } else {
+                        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"拼接完成" message:@"是否要保存拼接结果？" preferredStyle:UIAlertControllerStyleAlert];
+                        [alert addAction:[UIAlertAction actionWithTitle:@"保存"
+                                                                  style:UIAlertActionStyleDefault
+                                                                handler:^(UIAlertAction *action) {
+                                                                    UIImageWriteToSavedPhotosAlbum(result, nil, nil, nil);
+                                                                }]];
+                        [alert addAction:[UIAlertAction actionWithTitle:@"不保存"
+                                                                  style:UIAlertActionStyleCancel
+                                                                handler:nil]];
+                        [weak presentViewController:alert animated:YES completion:nil];
                     }
                 });
             });

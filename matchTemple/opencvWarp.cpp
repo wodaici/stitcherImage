@@ -32,13 +32,13 @@ void stitchingImage(vector<Mat>imgs,cv::Mat &pano){
     
     
     //找特征点surf算法，此算法计算量大,但对刚体运动、缩放、环境影响等情况下较为稳定
-    cv::initModule_nonfree();
-    cv::Ptr<detail::SurfFeaturesFinder> featureFinder ( new detail::SurfFeaturesFinder());
-    stitcher.setFeaturesFinder(featureFinder);
-    
-//    //找特征点ORB算法
-//    cv::Ptr<detail::OrbFeaturesFinder> featureFinder(new detail::OrbFeaturesFinder());
+//    cv::initModule_nonfree();
+//    cv::Ptr<detail::SurfFeaturesFinder> featureFinder ( new detail::SurfFeaturesFinder());
 //    stitcher.setFeaturesFinder(featureFinder);
+    
+    //找特征点ORB算法
+    cv::Ptr<detail::OrbFeaturesFinder> featureFinder(new detail::OrbFeaturesFinder());
+    stitcher.setFeaturesFinder(featureFinder);
     
     //Features matcher which finds two best matches for each feature and leaves the best one only if the ratio between descriptor distances is greater than the threshold match_conf.
     cv::Ptr<detail::BestOf2NearestMatcher> matcher ( new detail::BestOf2NearestMatcher(false, 0.2f));
