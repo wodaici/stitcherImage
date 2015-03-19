@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ltp-Hb-0mq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ltp-Hb-0mq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -13,14 +14,57 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ikv-gh-a01"/>
+                        <segue destination="ltH-Fy-8Ab" kind="relationship" relationship="rootViewController" id="aQE-0c-FA5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acF-Ib-p3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-268" y="782"/>
+            <point key="canvasLocation" x="-1583" y="133"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="C3s-9N-mXu">
+            <objects>
+                <viewController id="ltH-Fy-8Ab" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5PW-Ez-0pC"/>
+                        <viewControllerLayoutGuide type="bottom" id="wvP-bb-Uia"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5tm-20-SK3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSX-fa-r96">
+                                <rect key="frame" x="26" y="227" width="114" height="55"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="找图片">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Ph-HN-yu2" kind="show" id="cXi-Rj-LNc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3b-oP-DVm">
+                                <rect key="frame" x="26" y="94" width="114" height="55"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="拼接">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="BKS-xW-1Jv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="613-Rk-HPS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4z-hT-Nna" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-876" y="-155"/>
+        </scene>
+        <!--拼接-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -33,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Iaz-UW-Pm9">
+                    <navigationItem key="navigationItem" title="拼接" id="Iaz-UW-Pm9">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="cky-U1-PrV">
                             <connections>
                                 <action selector="choosePhoto:" destination="BYZ-38-t0r" id="Pi7-HW-Vjk"/>
@@ -43,7 +87,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273" y="401"/>
+            <point key="canvasLocation" x="1113" y="-991"/>
+        </scene>
+        <!--找图片-->
+        <scene sceneID="pLh-ho-luO">
+            <objects>
+                <viewController id="7Ph-HN-yu2" customClass="findImageVc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oa9-9C-daS"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ye-pn-Uek"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e5F-VL-uvS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HQq-Xr-DYV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HQq-Xr-DYV" firstAttribute="trailing" secondItem="e5F-VL-uvS" secondAttribute="trailingMargin" id="E1j-Wv-6Pg"/>
+                            <constraint firstItem="HQq-Xr-DYV" firstAttribute="leading" secondItem="e5F-VL-uvS" secondAttribute="leadingMargin" constant="-16" id="dUF-bh-puq"/>
+                            <constraint firstItem="HQq-Xr-DYV" firstAttribute="leading" secondItem="e5F-VL-uvS" secondAttribute="leadingMargin" id="ujU-mg-5lL"/>
+                            <constraint firstItem="HQq-Xr-DYV" firstAttribute="top" secondItem="e5F-VL-uvS" secondAttribute="topMargin" id="wSw-tB-eBr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HQq-Xr-DYV" secondAttribute="trailing" constant="-16" id="wv4-jt-VWf"/>
+                            <constraint firstItem="5Ye-pn-Uek" firstAttribute="top" secondItem="HQq-Xr-DYV" secondAttribute="bottom" id="x3a-75-h8S"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="E1j-Wv-6Pg"/>
+                                <exclude reference="ujU-mg-5lL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="找图片" id="xRO-Rf-iJr">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="oZb-Zj-OCu">
+                            <connections>
+                                <action selector="addClicked:" destination="7Ph-HN-yu2" id="eYA-pd-DNA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addBt" destination="oZb-Zj-OCu" id="8tZ-aE-7zi"/>
+                        <outlet property="rootimage" destination="HQq-Xr-DYV" id="fSM-5G-GO2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fdk-C4-bet" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803" y="1409"/>
         </scene>
     </scenes>
 </document>

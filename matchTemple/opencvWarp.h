@@ -15,3 +15,8 @@
 void stitchingImage(std::vector<cv::Mat>imgs,cv::Mat &pano);
 
 void stitchingImage2(std::vector<cv::Mat>imgs,cv::Mat &pano);
+
+bool issquareImage(const cv::Mat &image, const std::vector<cv::Point> &square);
+
+void findSquares( const cv::Mat& image, std::vector<std::vector<cv::Point> >&squares);
+void drawSquares( cv::Mat& imagesrc, const std::vector<std::vector<cv::Point> >& squares);

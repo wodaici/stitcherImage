@@ -13,4 +13,5 @@
 @interface opencvImageProc : NSObject
 + (UIImage *)matchTemple :(UIImage *)image temple:(UIImage *)temple ;
 + (UIImage *)stitcherImage:(NSArray *)arrayImages;
++(UIImage *)fetchImage:(UIImage*)templet;
 @end

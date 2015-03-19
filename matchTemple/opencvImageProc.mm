@@ -10,7 +10,7 @@
 
 #import "opencvImageProc.h"
 #import "opencvWarp.h"
-
+#import "opencv2/highgui/cap_ios.h"
 #ifdef __cplusplus
 #import <opencv2/opencv.hpp>
 //#import <opencv2/features2d.hpp>
@@ -182,5 +182,26 @@ using namespace cv;
 
     UIImage *result = MatToUIImage(pano);
     return result;
+}
+
++(UIImage *)fetchImage:(UIImage*)templet{
+
+    float scale = 1.0;
+    cv::Mat src ;
+    UIImageToMat(templet, src);
+    cv::Mat dsc;
+    cv::resize(src, dsc,cv::Size(src.cols*scale,src.rows*scale));
+    
+    
+    cv::vector<vector<cv::Point> > squares;
+    
+    //找出矩形区域
+    findSquares(dsc, squares);
+    //判断矩形区域是否是文字还是图片 只筛选出图片区域
+    drawSquares(src, squares);
+    
+    UIImage *image = MatToUIImage(src);
+    return image;
+
 }
 @end
