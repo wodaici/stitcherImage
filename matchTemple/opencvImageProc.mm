@@ -186,21 +186,23 @@ using namespace cv;
 
 +(UIImage *)fetchImage:(UIImage*)templet{
 
-    float scale = 1.0;
+    float scale = 1;
     cv::Mat src ;
     UIImageToMat(templet, src);
     cv::Mat dsc;
     cv::resize(src, dsc,cv::Size(src.cols*scale,src.rows*scale));
     
+//
     
     cv::vector<vector<cv::Point> > squares;
     
     //找出矩形区域
     findSquares(dsc, squares);
-    //判断矩形区域是否是文字还是图片 只筛选出图片区域
-    drawSquares(src, squares);
+    //画出矩形区域
+    drawSquares(dsc, squares);
     
-    UIImage *image = MatToUIImage(src);
+    UIImage *image = MatToUIImage(dsc);
+    
     return image;
 
 }
