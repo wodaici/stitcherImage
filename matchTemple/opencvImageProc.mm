@@ -196,9 +196,10 @@ using namespace cv;
     
     cv::vector<vector<cv::Point> > squares;
     
-    //找出矩形区域
+    //找出图片矩形区域
     findSquares(dsc, squares);
     //画出矩形区域
+    
     drawSquares(dsc, squares);
     
     UIImage *image = MatToUIImage(dsc);

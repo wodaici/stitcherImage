@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		D73EF3621AAD7D5700374F7E /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73EF3611AAD7D5700374F7E /* opencv2.framework */; };
 		D7596DCF1ABABB71006B2C1A /* findImageVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D7596DCE1ABABB71006B2C1A /* findImageVc.m */; };
-		D77137751AA9760C00BB9FED /* opencvWarp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D77137731AA9760C00BB9FED /* opencvWarp.cpp */; };
+		D77137751AA9760C00BB9FED /* opencvWarp.mm in Sources */ = {isa = PBXBuildFile; fileRef = D77137731AA9760C00BB9FED /* opencvWarp.mm */; };
 		D78AD1791AA7020100D32A94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78AD1781AA7020100D32A94 /* Images.xcassets */; };
+		D79C0F8C1AC2A8D800E2760C /* result.txt in Resources */ = {isa = PBXBuildFile; fileRef = D79C0F8B1AC2A8D800E2760C /* result.txt */; };
 		D7E725901AA486D10016F1E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E7258F1AA486D10016F1E4 /* main.m */; };
 		D7E725931AA486D10016F1E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E725921AA486D10016F1E4 /* AppDelegate.m */; };
 		D7E725961AA486D10016F1E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E725951AA486D10016F1E4 /* ViewController.m */; };
@@ -36,9 +37,10 @@
 		D73EF3611AAD7D5700374F7E /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = matchTemple/opencv2.framework; sourceTree = "<group>"; };
 		D7596DCD1ABABB71006B2C1A /* findImageVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findImageVc.h; sourceTree = "<group>"; };
 		D7596DCE1ABABB71006B2C1A /* findImageVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = findImageVc.m; sourceTree = "<group>"; };
-		D77137731AA9760C00BB9FED /* opencvWarp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = opencvWarp.cpp; sourceTree = "<group>"; };
+		D77137731AA9760C00BB9FED /* opencvWarp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = opencvWarp.mm; sourceTree = "<group>"; };
 		D77137741AA9760C00BB9FED /* opencvWarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opencvWarp.h; sourceTree = "<group>"; };
 		D78AD1781AA7020100D32A94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = matchTemple/Images.xcassets; sourceTree = "<group>"; };
+		D79C0F8B1AC2A8D800E2760C /* result.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = result.txt; sourceTree = SOURCE_ROOT; };
 		D7E7258A1AA486D10016F1E4 /* matchTemple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matchTemple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E7258E1AA486D10016F1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7E7258F1AA486D10016F1E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		D7E7258C1AA486D10016F1E4 /* matchTemple */ = {
 			isa = PBXGroup;
 			children = (
+				D79C0F8B1AC2A8D800E2760C /* result.txt */,
 				D7E725911AA486D10016F1E4 /* AppDelegate.h */,
 				D7E725921AA486D10016F1E4 /* AppDelegate.m */,
 				D7E725941AA486D10016F1E4 /* ViewController.h */,
@@ -110,7 +113,7 @@
 				D7596DCE1ABABB71006B2C1A /* findImageVc.m */,
 				D7E725C71AA48EEA0016F1E4 /* opencvImageProc.h */,
 				D7E725C81AA48EEA0016F1E4 /* opencvImageProc.mm */,
-				D77137731AA9760C00BB9FED /* opencvWarp.cpp */,
+				D77137731AA9760C00BB9FED /* opencvWarp.mm */,
 				D77137741AA9760C00BB9FED /* opencvWarp.h */,
 				D7E725BF1AA48B360016F1E4 /* UIImage+OpenCV.h */,
 				D7E725C01AA48B360016F1E4 /* UIImage+OpenCV.mm */,
@@ -230,6 +233,7 @@
 				D78AD1791AA7020100D32A94 /* Images.xcassets in Resources */,
 				D7E725991AA486D10016F1E4 /* Main.storyboard in Resources */,
 				D7E7259E1AA486D10016F1E4 /* LaunchScreen.xib in Resources */,
+				D79C0F8C1AC2A8D800E2760C /* result.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +253,7 @@
 			files = (
 				D7E725C11AA48B360016F1E4 /* UIImage+OpenCV.mm in Sources */,
 				D7E725C91AA48EEA0016F1E4 /* opencvImageProc.mm in Sources */,
-				D77137751AA9760C00BB9FED /* opencvWarp.cpp in Sources */,
+				D77137751AA9760C00BB9FED /* opencvWarp.mm in Sources */,
 				D7E725961AA486D10016F1E4 /* ViewController.m in Sources */,
 				D7E725931AA486D10016F1E4 /* AppDelegate.m in Sources */,
 				D7E725901AA486D10016F1E4 /* main.m in Sources */,
