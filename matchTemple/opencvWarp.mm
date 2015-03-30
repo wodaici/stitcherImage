@@ -297,7 +297,9 @@ cv::Mat imagecalcHist (const Mat &image){
 
 bool imageRecognition(const Mat &image){
    
-    
+    if(image.rows<30 && image.cols<30){
+        return false;
+    }
     CvNormalBayesClassifier testNbc;
     NSString *path = [[NSBundle mainBundle] pathForResource:@"result" ofType:@"txt"];
 
@@ -387,4 +389,119 @@ void drawSquares( Mat& imagesrc, const vector<vector<cv::Point> >& squares )
     }
 
 }
+bool compare1 (const cv::Rect  &a, const cv::Rect  &b)
+{
+    cv::Rect rect = a;
+    float a1 = rect.width* rect.height;
+    
+    cv::Rect rect2 = b;
+    
+    float b1 = rect2.width* rect2.height;
+    return (a1-b1)>0;
+}
 
+bool insertRect(const cv::Rect&big ,const cv::Rect &small){
+    
+    if (big.x<=small.x && big.y<=small.y
+        &&big.width+big.x>=small.width+small.x
+        &&big.height+big.y>=small.height+small.y) {
+        return true;
+    }else
+        return false;
+    
+}
+
+void findSquare2( const Mat& image){
+    
+    //
+    Mat gray;
+    cvtColor(image, gray, CV_BGR2GRAY);
+    Mat threshold;
+    adaptiveThreshold(gray, threshold, 255, ADAPTIVE_THRESH_MEAN_C,THRESH_BINARY_INV, 3, 5);
+    std::vector<vector<cv::Point> > contours;//不规则轮廓
+    std::vector<cv::Rect> result;//筛选后的矩形
+    dilate(threshold, threshold, Mat(), cv::Point(-1,-1));
+    
+    findContours(threshold, contours, RETR_LIST, CHAIN_APPROX_SIMPLE);
+    
+    vector<vector<cv::Point>> drawVector;
+    for( int i = 0; i < contours.size(); i++ ){
+        cv::Rect rect = boundingRect(contours[i]);
+        vector<cv::Point> v;
+        v.push_back (cv::Point(rect.x,rect.y));
+        v.push_back (cv::Point(rect.x+rect.width,rect.y));
+        v.push_back (cv::Point(rect.x+rect.width,rect.y+rect.height));
+        v.push_back (cv::Point(rect.x,rect.y+rect.height));
+        drawVector.push_back(v);
+        if (fabs(contourArea(contours[i]))>100) {
+            result.push_back(rect);
+        }
+    }
+    
+    std::sort(result.begin(), result.end(), compare1);//从大到小排序
+    vector<cv::Rect> imageVector;
+    vector<cv::Rect> textVector;
+    
+    
+    vector<cv::Rect>::iterator it;
+    for(it = result.begin();it!=result.end();it++){
+        
+        cv::Rect rectBig = *it;
+        Mat copyImage;
+        
+        image.copyTo(copyImage);
+        vector<cv::Rect>::iterator it2;
+        
+        if (imageRecognition(copyImage(rectBig))) {
+            imageVector.push_back(rectBig);
+        }else{
+            textVector.push_back(rectBig);
+        }
+        
+        
+        for (it2 = it+1;it2!=result.end();it2++) {
+            cv::Rect rectSmall = *it2;
+            if (insertRect(rectBig,rectSmall)) {
+                
+                if( !imageRecognition(copyImage(rectSmall))){
+                    result.erase(it2);
+                    it2--;
+                }else{
+                    //合并
+                    for (int k = 0; k<imageVector.size(); k++) {
+                        cv::Rect imageR= imageVector.at(k);
+                        if (insertRect(imageR, rectSmall)) {
+                            result.erase(it2);
+                            it2--;
+                            break;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    vector<vector<cv::Point> > imageVectorPoint;
+    vector<vector<cv::Point> > textVectorPoint;
+    for( int i = 0; i < imageVector.size(); i++ ){
+        vector<cv::Point> v;
+        cv::Rect rect = imageVector[i];
+        v.push_back (cv::Point(rect.x,rect.y));
+        v.push_back (cv::Point(rect.x+rect.width,rect.y));
+        v.push_back (cv::Point(rect.x+rect.width,rect.y+rect.height));
+        v.push_back (cv::Point(rect.x,rect.y+rect.height));
+        imageVectorPoint.push_back(v);
+        drawContours(image, imageVectorPoint, i, Scalar(255,0,255), 2);
+        
+    }
+    for( int i = 0; i < textVector.size(); i++ ){
+        vector<cv::Point> v;
+        cv::Rect rect = textVector[i];
+        v.push_back (cv::Point(rect.x,rect.y));
+        v.push_back (cv::Point(rect.x,rect.y+rect.height));
+        v.push_back (cv::Point(rect.x+rect.width,rect.y+rect.height));
+        v.push_back (cv::Point(rect.x+rect.width,rect.y));
+        textVectorPoint.push_back(v);
+        drawContours(image, textVectorPoint, i, Scalar(0,255,255), 2);
+    }
+}

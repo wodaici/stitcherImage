@@ -186,7 +186,7 @@ using namespace cv;
 
 +(UIImage *)fetchImage:(UIImage*)templet{
 
-    float scale = 1;
+    float scale = 0.5;
     cv::Mat src ;
     UIImageToMat(templet, src);
     cv::Mat dsc;
@@ -195,13 +195,13 @@ using namespace cv;
 //
     
     cv::vector<vector<cv::Point> > squares;
-    
+    /*
     //找出图片矩形区域
     findSquares(dsc, squares);
     //画出矩形区域
-    
     drawSquares(dsc, squares);
-    
+    */
+    findSquare2(dsc);
     UIImage *image = MatToUIImage(dsc);
     
     return image;

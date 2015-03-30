@@ -20,3 +20,4 @@ bool issquareImage(const cv::Mat &image, const std::vector<cv::Point> &square);
 
 void findSquares( const cv::Mat& image, std::vector<std::vector<cv::Point> >&squares);
 void drawSquares( cv::Mat& imagesrc, const std::vector<std::vector<cv::Point> >& squares);
+void findSquare2( const cv::Mat& image);
