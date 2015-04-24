@@ -14,4 +14,10 @@
 + (UIImage *)matchTemple :(UIImage *)image temple:(UIImage *)temple ;
 + (UIImage *)stitcherImage:(NSArray *)arrayImages;
 +(UIImage *)fetchImage:(UIImage*)templet;
++(NSString *)classiflerApp:(UIImage  *)image;
+//test===
++(UIImage *)getSingleChannelImage:(UIImage *)image;
+
++(UIImage*)histImage:(UIImage *) image;
+//===
 @end

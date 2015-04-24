@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D71757261AE8D5CC009F7E6C /* result256_10_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = D71757251AE8D5CC009F7E6C /* result256_10_2.txt */; };
+		D723F63F1ADE103700438F64 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D723F63E1ADE103700438F64 /* Photos.framework */; };
 		D73EF3621AAD7D5700374F7E /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73EF3611AAD7D5700374F7E /* opencv2.framework */; };
+		D74D90DA1AE79E4C00F75A4A /* rootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D90D91AE79E4C00F75A4A /* rootViewController.m */; };
+		D74D90DD1AE79FA300F75A4A /* openCVClassifierApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = D74D90DC1AE79FA300F75A4A /* openCVClassifierApp.mm */; };
 		D7596DCF1ABABB71006B2C1A /* findImageVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D7596DCE1ABABB71006B2C1A /* findImageVc.m */; };
 		D77137751AA9760C00BB9FED /* opencvWarp.mm in Sources */ = {isa = PBXBuildFile; fileRef = D77137731AA9760C00BB9FED /* opencvWarp.mm */; };
 		D78AD1791AA7020100D32A94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78AD1781AA7020100D32A94 /* Images.xcassets */; };
@@ -34,7 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D71757251AE8D5CC009F7E6C /* result256_10_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = result256_10_2.txt; sourceTree = SOURCE_ROOT; };
+		D723F63E1ADE103700438F64 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		D73EF3611AAD7D5700374F7E /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = matchTemple/opencv2.framework; sourceTree = "<group>"; };
+		D74D90D81AE79E4C00F75A4A /* rootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rootViewController.h; sourceTree = "<group>"; };
+		D74D90D91AE79E4C00F75A4A /* rootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rootViewController.m; sourceTree = "<group>"; };
+		D74D90DB1AE79FA300F75A4A /* openCVClassifierApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openCVClassifierApp.h; sourceTree = "<group>"; };
+		D74D90DC1AE79FA300F75A4A /* openCVClassifierApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = openCVClassifierApp.mm; sourceTree = "<group>"; };
 		D7596DCD1ABABB71006B2C1A /* findImageVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findImageVc.h; sourceTree = "<group>"; };
 		D7596DCE1ABABB71006B2C1A /* findImageVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = findImageVc.m; sourceTree = "<group>"; };
 		D77137731AA9760C00BB9FED /* opencvWarp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = opencvWarp.mm; sourceTree = "<group>"; };
@@ -65,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D723F63F1ADE103700438F64 /* Photos.framework in Frameworks */,
 				D73EF3621AAD7D5700374F7E /* opencv2.framework in Frameworks */,
 				D7E725B61AA4870A0016F1E4 /* AssetsLibrary.framework in Frameworks */,
 			);
@@ -83,6 +94,7 @@
 		D7E725811AA486D10016F1E4 = {
 			isa = PBXGroup;
 			children = (
+				D723F63E1ADE103700438F64 /* Photos.framework */,
 				D73EF3611AAD7D5700374F7E /* opencv2.framework */,
 				D78AD1781AA7020100D32A94 /* Images.xcassets */,
 				D7E725B51AA4870A0016F1E4 /* AssetsLibrary.framework */,
@@ -104,6 +116,7 @@
 		D7E7258C1AA486D10016F1E4 /* matchTemple */ = {
 			isa = PBXGroup;
 			children = (
+				D71757251AE8D5CC009F7E6C /* result256_10_2.txt */,
 				D79C0F8B1AC2A8D800E2760C /* result.txt */,
 				D7E725911AA486D10016F1E4 /* AppDelegate.h */,
 				D7E725921AA486D10016F1E4 /* AppDelegate.m */,
@@ -120,6 +133,10 @@
 				D7E725971AA486D10016F1E4 /* Main.storyboard */,
 				D7E7259C1AA486D10016F1E4 /* LaunchScreen.xib */,
 				D7E7258D1AA486D10016F1E4 /* Supporting Files */,
+				D74D90D81AE79E4C00F75A4A /* rootViewController.h */,
+				D74D90D91AE79E4C00F75A4A /* rootViewController.m */,
+				D74D90DB1AE79FA300F75A4A /* openCVClassifierApp.h */,
+				D74D90DC1AE79FA300F75A4A /* openCVClassifierApp.mm */,
 			);
 			path = matchTemple;
 			sourceTree = "<group>";
@@ -234,6 +251,7 @@
 				D7E725991AA486D10016F1E4 /* Main.storyboard in Resources */,
 				D7E7259E1AA486D10016F1E4 /* LaunchScreen.xib in Resources */,
 				D79C0F8C1AC2A8D800E2760C /* result.txt in Resources */,
+				D71757261AE8D5CC009F7E6C /* result256_10_2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74D90DD1AE79FA300F75A4A /* openCVClassifierApp.mm in Sources */,
 				D7E725C11AA48B360016F1E4 /* UIImage+OpenCV.mm in Sources */,
 				D7E725C91AA48EEA0016F1E4 /* opencvImageProc.mm in Sources */,
+				D74D90DA1AE79E4C00F75A4A /* rootViewController.m in Sources */,
 				D77137751AA9760C00BB9FED /* opencvWarp.mm in Sources */,
 				D7E725961AA486D10016F1E4 /* ViewController.m in Sources */,
 				D7E725931AA486D10016F1E4 /* AppDelegate.m in Sources */,
@@ -388,10 +408,11 @@
 					"$(PROJECT_DIR)/matchTemple",
 				);
 				INFOPLIST_FILE = matchTemple/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -406,17 +427,17 @@
 					"$(PROJECT_DIR)/matchTemple",
 				);
 				INFOPLIST_FILE = matchTemple/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		D7E725B11AA486D10016F1E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -426,6 +447,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = matchTempleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/matchTemple.app/matchTemple";
@@ -435,12 +457,12 @@
 		D7E725B21AA486D10016F1E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = matchTempleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/matchTemple.app/matchTemple";

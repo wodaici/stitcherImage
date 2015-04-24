@@ -12,4 +12,5 @@
 @property (weak, nonatomic) IBOutlet UIImageView *rootimage;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addBt;
 
+@property(assign,nonatomic) BOOL isAppclassify;
 @end

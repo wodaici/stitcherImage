@@ -88,11 +88,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "matchTemple/UIImage+OpenCV.mm"
-            timestampString = "447329832.396238"
+            timestampString = "451382551.659772"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "-CVGrayscaleMat"
             landmarkType = "5">
          </BreakpointContent>
@@ -104,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "matchTemple/UIImage+OpenCV.mm"
-            timestampString = "447327939.705772"
+            timestampString = "451382551.659772"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "-CVMatRGB"
             landmarkType = "5">
          </BreakpointContent>
@@ -136,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "matchTemple/opencvWarp.mm"
-            timestampString = "448965946.995603"
+            timestampString = "451389074.604246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "stitchingImage(vector&lt;Mat&gt;imgs,cv::Mat &amp;pano)"
             landmarkType = "7">
          </BreakpointContent>
@@ -152,11 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "matchTemple/opencvWarp.mm"
-            timestampString = "448965946.995603"
+            timestampString = "451389074.604246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "stitchingImage(vector&lt;Mat&gt;imgs,cv::Mat &amp;pano)"
             landmarkType = "7">
          </BreakpointContent>
@@ -168,11 +168,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "matchTemple/opencvWarp.mm"
-            timestampString = "448965946.995603"
+            timestampString = "451389074.604246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "stitchingImage(vector&lt;Mat&gt;imgs,cv::Mat &amp;pano)"
             landmarkType = "7">
          </BreakpointContent>
@@ -180,15 +180,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "matchTemple/opencvWarp.mm"
-            timestampString = "448965946.995603"
+            timestampString = "451389074.604246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "stitchingImage(vector&lt;Mat&gt;imgs,cv::Mat &amp;pano)"
             landmarkType = "7">
          </BreakpointContent>
@@ -196,15 +196,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "matchTemple/ViewController.m"
-            timestampString = "447686779.024548"
+            timestampString = "451386741.97011"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "-imagePickerController:didFinishPickingImage:editingInfo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -216,11 +216,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "matchTemple/findImageVc.m"
-            timestampString = "449402884.301978"
+            timestampString = "451538462.055302"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "-imagePickerController:didFinishPickingImage:editingInfo:"
             landmarkType = "5">
          </BreakpointContent>
@@ -232,11 +232,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "matchTemple/opencvWarp.mm"
-            timestampString = "449400539.198968"
+            timestampString = "451389074.604246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "521"
-            endingLineNumber = "521">
+            startingLineNumber = "523"
+            endingLineNumber = "523">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -244,6 +244,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "removerNest(cv::Mat const&amp;, std::__1::vector&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt; &gt; &gt;&amp;)"
                   moduleName = "matchTemple"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lingyun/stitcherImage/matchTemple/opencvWarp.cpp"
                   timestampString = "448537311.726773"
                   startingColumnNumber = "9223372036854775807"
@@ -258,6 +259,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "removerNest(cv::Mat const&amp;, std::__1::vector&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt; &gt; &gt;&amp;)"
                   moduleName = "matchTemple"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lingyun/stitcherImage/matchTemple/opencvWarp.cpp"
                   timestampString = "448537311.727012"
                   startingColumnNumber = "9223372036854775807"
@@ -272,6 +274,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "removerNest(cv::Mat const&amp;, std::__1::vector&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt; &gt; &gt;&amp;)"
                   moduleName = "matchTemple"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lingyun/stitcherImage/matchTemple/opencvWarp.cpp"
                   timestampString = "448537311.727311"
                   startingColumnNumber = "9223372036854775807"
@@ -286,6 +289,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "removerNest(cv::Mat const&amp;, std::__1::vector&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt; &gt; &gt;&amp;)"
                   moduleName = "matchTemple"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lingyun/stitcherImage/matchTemple/opencvWarp.cpp"
                   timestampString = "448537311.727515"
                   startingColumnNumber = "9223372036854775807"
@@ -300,6 +304,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "removerNest(cv::Mat const&amp;, std::__1::vector&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt; &gt; &gt;&amp;)"
                   moduleName = "matchTemple"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lingyun/stitcherImage/matchTemple/opencvWarp.cpp"
                   timestampString = "448537311.727719"
                   startingColumnNumber = "9223372036854775807"
@@ -334,11 +339,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "matchTemple/opencvWarp.mm"
-            timestampString = "449400539.198968"
+            timestampString = "451389074.604246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "515"
-            endingLineNumber = "515">
+            startingLineNumber = "517"
+            endingLineNumber = "517">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -346,6 +351,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "removerNest(cv::Mat const&amp;, std::__1::vector&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt; &gt; &gt;&amp;)"
                   moduleName = "matchTemple"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lingyun/stitcherImage/matchTemple/opencvWarp.cpp"
                   timestampString = "448539387.959192"
                   startingColumnNumber = "9223372036854775807"
@@ -360,6 +366,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "removerNest(cv::Mat const&amp;, std::__1::vector&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;cv::Point_&lt;int&gt;, std::__1::allocator&lt;cv::Point_&lt;int&gt; &gt; &gt; &gt; &gt;&amp;)"
                   moduleName = "matchTemple"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lingyun/stitcherImage/matchTemple/opencvWarp.cpp"
                   timestampString = "448539387.959406"
                   startingColumnNumber = "9223372036854775807"
@@ -378,11 +385,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "matchTemple/opencvWarp.mm"
-            timestampString = "449400539.198968"
+            timestampString = "451389074.604246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "520"
-            endingLineNumber = "520">
+            startingLineNumber = "522"
+            endingLineNumber = "522">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -391,13 +398,205 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "matchTemple/findImageVc.m"
-            timestampString = "449402884.301978"
+            filePath = "matchTempleTests/matchTempleTests.m"
+            timestampString = "450258362.86212"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "-setUp"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "matchTemple/opencvWarp.mm"
+            timestampString = "451389074.604246"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "stitchingImage(vector&lt;Mat&gt;imgs,cv::Mat &amp;pano)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "matchTemple/ViewController.m"
+            timestampString = "451384194.534256"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "matchTemple/rootViewController.m"
+            timestampString = "451387130.145258"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-prepareForSegue:sender:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "matchTemple/rootViewController.m"
+            timestampString = "451387040.215536"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-prepareForSegue:sender:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "matchTemple/findImageVc.m"
+            timestampString = "451538462.055302"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "-imagePickerController:didFinishPickingImage:editingInfo:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[findImageVc imagePickerController:didFinishPickingImage:editingInfo:]"
+                  moduleName = "matchTemple"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lingyun/stitcherImage/matchTemple/findImageVc.m"
+                  timestampString = "451389225.579254"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "414">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__71-[findImageVc imagePickerController:didFinishPickingImage:editingInfo:]_block_invoke"
+                  moduleName = "matchTemple"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lingyun/stitcherImage/matchTemple/findImageVc.m"
+                  timestampString = "451389225.579561"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "21">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "matchTemple/openCVClassifierApp.mm"
+            timestampString = "451468202.882816"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "imagecalcHistHSV (const Mat &amp;image,const Mat &amp;mask)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "matchTemple/openCVClassifierApp.mm"
+            timestampString = "451545748.556849"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "bayesClassifierApp(cv::Mat &amp;image)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "matchTemple/findImageVc.m"
+            timestampString = "451538462.055302"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "matchTemple/openCVClassifierApp.mm"
+            timestampString = "451545748.556849"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "imageCalcHist(Mat &amp;gary_hist)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "matchTemple/opencvImageProc.mm"
+            timestampString = "451538450.979408"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "+classiflerApp:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -25,7 +25,7 @@
 #import "UIImage+OpenCV.h"
 #import <opencv2/highgui/highgui_c.h>
 #import <opencv2/imgproc/imgproc_c.h>
-
+#import "openCVClassifierApp.h"
 
 using namespace cv;
 @implementation opencvImageProc
@@ -205,6 +205,45 @@ using namespace cv;
     UIImage *image = MatToUIImage(dsc);
     
     return image;
+
+}
+
+
++(NSString *)classiflerApp:(UIImage  *)image{
+
+    cv::Mat src ;
+    UIImageToMat(image, src,YES);
+    std::string  t = bayesClassifierApp(src);
+    NSString *result = [NSString stringWithUTF8String:t.c_str()];
+    
+    
+    return result;
+}
+
++(UIImage *)getSingleChannelImage:(UIImage *)image{
+
+
+    //test===========//
+    cv::Mat src ;
+    UIImageToMat(image, src);
+    
+    Mat channel(src.rows,src.cols,CV_8U);
+    int ch[] = {2,0};
+    mixChannels(&src,1,&channel,1,ch,1);
+    
+    UIImage *result = MatToUIImage(channel);
+    return result;
+}
+
+
++(UIImage*)histImage:(UIImage *) image{
+
+    cv::Mat src ;
+    UIImageToMat(image, src);
+    cv::Mat test = creatTestMat(src);
+    cv::Mat result = imageCalcHist(test);
+    
+    return MatToUIImage(result);
 
 }
 @end

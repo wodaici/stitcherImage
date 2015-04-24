@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E15E1AE1-2538-4785-9908-82EDFB73E141</string>
 	<key>IDESourceControlProjectName</key>
-	<string>matchTemple</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F06A233189D5D237993E444BC9C8E6AA39EE3FAD</key>
 		<string>https://github.com/wodaici/stitcherImage.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>matchTemple.xcodeproj</string>
+	<string>matchTemple.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F06A233189D5D237993E444BC9C8E6AA39EE3FAD</key>

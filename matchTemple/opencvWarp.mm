@@ -17,6 +17,7 @@
 #import <opencv2/imgproc/imgproc.hpp>
 #import <opencv2/core/core_c.h>
 #import <Foundation/Foundation.h>
+#import <opencv2/ml/ml.hpp>
 using namespace cv;
 using namespace  std;
 int N = 21;
@@ -505,3 +506,7 @@ void findSquare2( const Mat& image){
         drawContours(image, textVectorPoint, i, Scalar(0,255,255), 2);
     }
 }
+
+
+
+//***//分类器区分
